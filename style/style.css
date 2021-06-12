@@ -1,0 +1,77 @@
+.header .header-top {
+    background: #20242D;
+}
+.header .address {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+}
+.header .contacts a {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.header .header-bottom {
+    background: #FFFFFF;
+}
+.header .navigation a{
+    font-family: Gilroy;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #20242D;
+    text-decoration: none;
+}
+.header .navigation .active{
+    color: #FF7129;
+}
+.start-screen {
+    /*Для тестировки*/
+    background: #777; 
+}
+.start-screen .main-title {
+    font-size: 92px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 111px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #FFFFFF;
+}
+.start-screen .slogan {
+    
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: center;
+color: #FFFFFF;
+}
+.start-screen .btn {
+    background: #FF7129;
+    box-shadow: 0px 4px 28px 0px #FF71294A;
+    
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 17px;
+letter-spacing: 0em;
+text-align: center;
+color: #FFFFFF;
+}
+.start-screen .btn-scrool {
+    background: rgba(123, 126, 133, 0.4);
+}

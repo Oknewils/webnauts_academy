@@ -3,69 +3,105 @@
   src: url(../fonts/gilroy-bold.ttf);
   font-weight: 700;
 }
+
 @font-face {
   font-family: "Gilroy";
   src: url(../fonts/gilroy-semibold.ttf);
   font-weight: 600;
 }
+
 @font-face {
   font-family: "Gilroy";
   src: url(../fonts/gilroy-regular.ttf);
   font-weight: 400;
 }
+/*index*/
 body {
   font-family: "Gilroy";
   margin: 0;
 }
+
 button {
   padding: 0;
   border: 0;
 }
+
 ul {
   padding: 0;
   margin: 0;
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
+
+.btn {
+  background: #ff7129;
+  box-shadow: 0px 4px 28px 0px #ff71294a;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ffffff;
+  display: block;
+  width: 188px;
+  padding: 16px 45px;
+}
+
+.btn-dark {
+  background-color: #20242d;
+  border: 1px solid #ff7129;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 28px 0px #ff7129ab;
+}
+
 .container {
-  width: 100%;
-  max-width: 1600px;
+  width: auto;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
+  box-sizing: border-box;
 }
-.header .header-top .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header .header-top {
+
+.header .wrapper-top {
   background: #20242d;
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+.header .wrapper-top .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header .address {
   font-size: 12px;
   font-style: normal;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 14px;
   letter-spacing: 0em;
   text-align: left;
   color: #ffffff;
 }
+
 .header .contacts {
   display: flex;
   justify-content: space-between;
 }
-.header .contacts .li {
+
+.header .contacts li {
   margin-right: 56px;
 }
-.header .contacts .li:last-child {
+
+.header .contacts li:last-child {
   margin-right: 0;
 }
+
 .header .contacts a {
   font-size: 12px;
   font-style: normal;
@@ -76,18 +112,33 @@ a {
   color: #ffffff;
   text-decoration: none;
 }
-.header .header-bottom {
+
+.header .wrapper-bottom {
   background: #ffffff;
   padding-top: 12px;
   padding-bottom: 11px;
 }
-.header .header-bottom .container {
+
+.header .wrapper-bottom .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+.header .navigation ul {
+  display: flex;
+  align-items: center;
+}
+
+.header .navigation li {
+  margin-right: 56px;
+}
+
+.header .navigation li:last-child {
+  margin-right: 0;
+}
+
 .header .navigation a {
-  font-family: Gilroy;
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
@@ -97,29 +148,21 @@ a {
   color: #20242d;
   text-decoration: none;
 }
-.header .navigation ul {
-  display: flex;
-  align-items: center;
-}
-.header .navigation li {
-  margin-right: 56px;
-}
-.header .navigation li:last-child {
-  margin-right: 0px;
-}
+
 .header .navigation .active {
   color: #ff7129;
 }
+
 .start-screen {
-  /*Для тестировки*/
   background: #777;
-  background-image: url(../img/main-bg.jpg);
+  background-image: url("../img/main-bg.jpg");
   padding-top: 270px;
   padding-bottom: 138px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
 }
+
 .start-screen .main-title {
   font-size: 92px;
   font-style: normal;
@@ -128,9 +171,10 @@ a {
   letter-spacing: 0em;
   text-align: center;
   color: #ffffff;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 16px;
 }
+
 .start-screen .slogan {
   font-size: 16px;
   font-style: normal;
@@ -144,25 +188,14 @@ a {
   margin-right: auto;
   margin-bottom: 59px;
 }
-.start-screen .btn {
-  background: #ff7129;
-  box-shadow: 0px 4px 28px 0px #ff71294a;
 
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 17px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: #ffffff;
-  display: block;
-  width: 188px;
-  padding: 16px 45px;
+.start-screen .btn {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 106px;
 }
-.start-screen .btn-scrool {
+
+.start-screen .btn-scroll {
   background: rgba(123, 126, 133, 0.4);
   width: 46px;
   height: 46px;
@@ -171,3 +204,155 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+
+.main-info {
+  background: #ffffff;
+  padding-top: 132px;
+  padding-bottom: 115px;
+  background-image: url("../img/main-info-bg.png");
+  background-position: 0 0;
+  background-size: 1400px 1055px;
+  background-repeat: no-repeat;
+}
+
+.main-info .container {
+  display: flex;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.main-info .title {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #20242d;
+}
+
+.main-info img {
+  margin-right: 65px;
+}
+
+.main-info .content {
+  width: 535px;
+  padding-top: 69px;
+}
+
+.main-info .title {
+  margin-top: 0;
+  margin-bottom: 64px;
+}
+
+.main-info .content p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #20242d;
+}
+
+.footer {
+  background: #20242d;
+}
+
+.footer .navigation a {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer .wrapper-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 58px;
+  padding-bottom: 52px;
+}
+
+.footer .navigation .active {
+  color: #ff7129;
+}
+
+.footer .navigation ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .navigation li {
+  margin-right: 56px;
+}
+
+.footer .navigation li:last-child {
+  margin-right: 0px;
+}
+
+.footer .wrapper-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-top: 1px solid rgba(123, 126, 133, 0.3);
+}
+
+.footer .wrapper-bottom .privace {
+  color: #7b7e85;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+}
+
+.footer .wrapper-bottom .secur-data {
+  color: #7b7e85;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 0em;
+}
+
+/*about*/
+.about-screen {
+  background: #777;
+  background-image: url(../img/main-o-nas.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 350px;
+}
+
+
+
+.about-screen .about-title {
+  font-family: Gilroy;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 47px;
+letter-spacing: 0em;
+text-align: left;
+color: #FFFFFF;
+}
+.about-title {
+  margin-top: 200px;
+  margin-right: 1153px;
+  margin-top: 103px;
+  margin-left: 217px;
+}
+
+
+
+/* .pop-up {
+  display: none;
+} */

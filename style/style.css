@@ -95,7 +95,14 @@ a {
 }
 
 .header .contacts li {
+  position: relative;
   margin-right: 56px;
+  padding-left: 22px;
+}
+.header .contacts svg {
+  position: absolute;
+  top: 4px;
+  left: 0px;
 }
 
 .header .contacts li:last-child {
@@ -150,7 +157,28 @@ a {
 }
 
 .header .navigation .active {
+  position: relative;
   color: #ff7129;
+}
+.header .navigation .active::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 1px;
+  background-color: #ff7129;
+  top: 9px;
+  left: -15px;
+}
+.header .navigation .active::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 10px;
+  height: 1px;
+  background-color: #ff7129;
+  top: 9px;
+  right: -15px;
 }
 
 .start-screen {
@@ -161,6 +189,11 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
+}
+.start-screen .container {
+  position: relative;
+  padding-top: 270px;
+  padding-bottom: 138px;
 }
 
 .start-screen .main-title {
@@ -204,6 +237,34 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+.start-screen .decor-word {
+  position: absolute;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 145px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: transparent;
+  text-transform: uppercase;
+  top: 163px;
+  left: 50px;
+}
+.start-screen .decor-word-2 {
+  position: absolute;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 145px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: transparent;
+  text-transform: uppercase;
+  right: 50px;
+  bottom: 282px;
+}
 
 .main-info {
   background: #ffffff;
@@ -216,9 +277,22 @@ a {
 }
 
 .main-info .container {
+  position: relative;
   display: flex;
   padding-left: 200px;
   padding-right: 200px;
+}
+.main-info .container .decor-word {
+  position: absolute;
+  -webkit-text-stroke: 1px rgba(32, 36, 45, 0.1);
+  font-size: 120px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 145px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: transparent;
+  text-transform: uppercase;
 }
 
 .main-info .title {
@@ -333,15 +407,15 @@ a {
   height: 350px;
 }
 .about-screen .about-title {
-font-family: Gilroy;
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: 47px;
-letter-spacing: 0em;
-text-align: left;
-color: #FFFFFF;
-margin-top: 0px;
+  font-family: Gilroy;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ffffff;
+  margin-top: 0px;
 }
 
 .about-screen .about-title {
@@ -349,7 +423,7 @@ margin-top: 0px;
   padding-bottom: 103px;
   padding-left: 40px;
 }
-.about-info .container{
+.about-info .container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -365,7 +439,7 @@ margin-top: 0px;
 .about-info .about-text-2 {
   height: 72px;
   width: 500px;
-  padding-top: 80px; 
+  padding-top: 80px;
   padding-left: 66px;
 }
 .about-info .about-text-3 {
@@ -376,14 +450,14 @@ margin-top: 0px;
 }
 /*project*/
 .main-project .projekty-title {
-font-family: Gilroy;
-font-size: 48px;
-font-style: normal;
-font-weight: 700;
-line-height: 47px;
-letter-spacing: 0em;
-text-align: left;
-color: #20242D;
+  font-family: Gilroy;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 47px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #20242d;
 }
 .main-project .projekty-title {
   padding-top: 125px;
@@ -402,9 +476,6 @@ color: #20242D;
   margin-left: auto;
   margin-right: auto;
 }
-
-
-
 
 /* .pop-up {
   display: none;

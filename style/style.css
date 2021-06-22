@@ -374,20 +374,37 @@ margin-top: 0px;
   padding-bottom: 184px;
   padding-left: 40px;
 }
+/*project*/
+.main-project .projekty-title {
+font-family: Gilroy;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: 47px;
+letter-spacing: 0em;
+text-align: left;
+color: #20242D;
+}
+.main-project .projekty-title {
+  padding-top: 125px;
+  padding-bottom: 37px;
+  padding-left: 174px;
+}
+.main-project .container {
+  display: flex;
+  justify-content: center;
+}
+.main-project .btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-/*
-.about-screen .about-text-1 {
-  height: 534px;
-  width: 168px;
-}
-.about-screen .about-text-2 {
-  height: 534px;
-  width: 168px;
-}
-.about-screen .about-text-3 {
-  height: 534px;
-  width: 168px;
-}*/
+
+
 
 /* .pop-up {
   display: none;

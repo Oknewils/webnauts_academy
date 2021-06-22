@@ -325,17 +325,15 @@ a {
 /*about*/
 .about-screen {
   background: #777;
-  background-image: url(../img/main-o-nas.jpg);
+  background-image: url("../img/main-o-nas.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 50%;
   width: auto;
   height: 350px;
 }
-
-
-
 .about-screen .about-title {
-  font-family: Gilroy;
+font-family: Gilroy;
 font-size: 48px;
 font-style: normal;
 font-weight: 700;
@@ -343,15 +341,53 @@ line-height: 47px;
 letter-spacing: 0em;
 text-align: left;
 color: #FFFFFF;
-}
-.about-title {
-  margin-top: 200px;
-  margin-right: 1153px;
-  margin-top: 103px;
-  margin-left: 217px;
+margin-top: 0px;
 }
 
+.about-screen .about-title {
+  padding-top: 200px;
+  padding-bottom: 103px;
+  padding-left: 40px;
+}
+.about-info .container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.about-info .about-text-1 {
+  height: 84px;
+  width: 500px;
+  padding-top: 80px;
+  padding-right: 66px;
+  padding-bottom: 100;
+  padding-left: 40px;
+}
+.about-info .about-text-2 {
+  height: 72px;
+  width: 500px;
+  padding-top: 80px; 
+  padding-left: 66px;
+}
+.about-info .about-text-3 {
+  height: 84px;
+  width: 500px;
+  padding-bottom: 184px;
+  padding-left: 40px;
+}
 
+/*
+.about-screen .about-text-1 {
+  height: 534px;
+  width: 168px;
+}
+.about-screen .about-text-2 {
+  height: 534px;
+  width: 168px;
+}
+.about-screen .about-text-3 {
+  height: 534px;
+  width: 168px;
+}*/
 
 /* .pop-up {
   display: none;

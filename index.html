@@ -13,9 +13,9 @@
     <header class="header">
         <div class="wrapper-top">
             <div class="container">
-                <address class="address">
+                <span class="address">
                     Dąbrówka Wielkopolska, ul. Główna 53, 66-210 Zbąszynek
-                </address>
+                </span>
                 <ul class="contacts">
                     <li>
                         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -81,19 +81,19 @@
     <main>
         <section class="start-screen">
             <div class="container">
-              <span class="decor-word">
-                Solar
-              </span>
-              <span class="decor-word-2">
-                Energy
-              </span>
+                <span class="decor-word">
+                    Solar
+                </span>
+                <span class="decor-word-2">
+                    Energy
+                </span>
                 <h1 class="main-title">
                     Panele Fotowoltaiczne
                 </h1>
                 <p class="slogan">
                     Kompleksowe usługi w zakresie montażu i podłączenia paneli słonecznych.
                 </p>
-                <button class="btn">
+                <button class="btn btn-pop-up">
                     Obliczyć koszt
                 </button>
                 <button class="btn-scroll">
@@ -109,9 +109,9 @@
             <div class="container">
                 <img src="img/main-info-photo.jpg" width="600" height="600" alt="some img">
                 <div class="content">
-                  <span class="decor-word">
-                      Info
-                  </span>
+                    <span class="decor-word">
+                        Info
+                    </span>
                     <h2 class="title">
                         Ty i twói dom
                     </h2>
@@ -141,7 +141,7 @@
                 <nav class="navigation">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a href="#" class="active">
                                 Strona główna
                             </a>
                         </li>
@@ -175,74 +175,39 @@
                 <a href="#" class="privace">Polityka prywatności</a>
                 <a href="#" class="secur-data">Ochrona danych osobowych</a>
             </div>
-
             <div class="pop-up">
-        <div class="Obliczyc koszt">
-          <p>CALCULATOR</p>
-          <h3>Obliczyć koszt</h3>
-          <p>Wprowadź swoje dane, aby obliczyć przybliżony koszt paneli słonecznych.</p>
-          <p>Roczne zużycie energii elektrycznej</p>
-          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M6 11C3.2385 11 1 8.7615 1 6C1 3.2385 3.2385 1 6 1C8.7615 1 11 3.2385 11 6C11 8.7615 8.7615 11 6 11ZM5.5 5.5V8.5H6.5V5.5H5.5ZM5.5 3.5V4.5H6.5V3.5H5.5Z" fill="#BDBDBD"/>
-            </svg>
-          <p>42 200 kWh</p>    
-          <input type="range" min="0" max="100" step="1" value="50">      
-          <p>Strona świata</p>
-          <p>Materiał dachu</p>                     
-          <select>
-            <option>Wybierz z listy</option>
-            <option>Południowy</option>
-            <option>Wschodni</option>
-            <option>Zachodni</option>
-          </select>
-          <button class="btn">Obliczyć koszt</button>                                         
+                <button class="pop-up-close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M12 10.586L16.95 5.63599L18.364 7.04999L13.414 12L18.364 16.95L16.95 18.364L12 13.414L7.04999 18.364L5.63599 16.95L10.586 12L5.63599 7.04999L7.04999 5.63599L12 10.586Z"
+                            fill="#20242d" />
+                    </svg>
+                </button>
+                <b class="pop-up-title">
+                    Jakieś pytania?
+                </b>
+                <p class="pop-up-dscr">
+                    Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania
+                </p>
+                <form method="GET" action="#">
+                    <label>
+                        Twoje imię
+                        <input type="text" name="user" placeholder="Wprowadź swoje imię" id="name">
+                    </label>
+                    <label>
+                        E-mail
+                        <input type="email" name="email" placeholder="Wprowadź mail" id="email">
+                    </label>
+                    <label>
+                        Telefon
+                        <input type="tel" name="phone" placeholder="Wprowadź telefon" id="tel">
+                    </label>
+                    <button type="submit" class="btn pop-up-btn">Wysłać prośbę</button>
+                </form>
+            </div>
         </div>
-  
-        <div class="Jakies pytania">
-        <p>Przybliżony koszt:</p>
-        <p>40 000 zł</p>
-        <h3>Jakieś pytania?</h3>
-        <p>Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania</p>    
-        <form action="#">
-          <p>Twoje imię</p>
-          <input type="text" size="40" placeholder="Wprowadź swoje imię"
-          >
-            </svg>
-         <p>E-mail</p>
-          <input type="text" size="40" placeholder="Wprowadź mail"
-            >
-            </svg>
-          <p>Telefon</p>
-           <input type="text" size="40" placeholder="Wprowadź telefon"
-              >
-        </form> 
-        <button class="btn">Wysłać prośbę</button>                
-        </div>
-  
-      <div class="Dziekuje za twoja prosbę">
-        <h2>Dziękuję za twoją prośbę</h2>
-        <p>Nasz menedżer wkrótce się z Tobą skontaktuje</p> 
-        <button class="btn">Ok</button>           
-      </div>
-      
-      <div class="Oddzwon">
-        <p>CALLBACK</p>
-            <h2>Oddzwoń</h2>
-            <p>Zostaw swoje dane, a nasz menedżer skontaktuje się z Tobą, aby odpowiedzieć na Twoje pytania.</p>                             
-            <form action="#">
-              <p>Twoje imię</p>
-              <input type="text" size="40" placeholder="Wprowadź swoje imię"
-              >
-              
-              <p>Telefon</p>
-               <input type="text" size="40" placeholder="Wprowadź telefon"
-                  >
-                
-            </form> 
-            <button class="btn">Zadzwoń</button>   
-      </div
-      >
     </footer>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>
